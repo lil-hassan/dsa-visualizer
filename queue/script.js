@@ -10,6 +10,34 @@ document.getElementById("dequeue").addEventListener("click", dequeue);
 document.getElementById("peek").addEventListener("click", peek);
 
 
+
+// Press Enter to enqueue
+document.getElementById("queue-input").addEventListener("keydown", (event)=>{
+  if(event.key==="Enter"){
+    event.preventDefault();
+    enqueue();
+  }
+});
+
+// Shift focus of cursor to input value when pressed enter 
+document.getElementById("queue-size").addEventListener("keydown", (event)=>{
+  if(event.key==="Enter"){
+    event.preventDefault();
+    input.focus();
+  }
+});
+
+// Press Delete to Dequeue
+if(document.addEventListener("keydown",(event)=>{
+    if(event.key==="Delete")
+    {
+      event.preventDefault();
+      dequeue();
+    }
+}));
+
+
+
 function enqueue() {
   const value = input.value.trim();
   const maxSize = Number(sizeInput.value);

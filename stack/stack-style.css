@@ -54,7 +54,7 @@ header {
 }
 
 /* Queue display */
-.queue-display {
+.stack-display {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,22 +62,29 @@ header {
   margin-bottom: 20px;
 }
 
-/* Queue container */
-#queueContainer {
+/* Stack container */
+#stackContainer {
   display: flex;
+  flex-direction: column-reverse;
   gap: 10px;
-  min-height: 60px;
 }
 
-/* Front / Rear labels */
+/* Top label */
 .label {
   font-size: 0.9rem;
   font-weight: bold;
   color: #facc15;
 }
 
-/* Queue element renders with JS*/
-.queue-item {
+.label_top{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Stack element renders with JS*/
+.stack-item {
   width: 60px;
   height: 60px;
   background: goldenrod;
