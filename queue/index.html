@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Queue Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h2>Queue Visualizer (FIFO)</h2>
+  </header>
+
+  <main class="container">
+
+    <!-- Controls -->
+    <section class="controls">
+
+      <div>
+        <label for="queue-size">Queue Size</label>
+        <input type="number" id="queue-size" name="queueSize" placeholder="Buffer Size" min="1" max="15">
+      </div>
+
+      <div>
+        <label for="queue-input">Key</label>
+        <input type="number" id="queue-input" placeholder="Enter Key">
+      </div>
+
+      <button id="enqueue">Enqueue</button>
+      <button id="dequeue">Dequeue</button>
+      <button id="peek">Peek</button>
+
+    </section>
+
+    <!-- Queue display -->
+    <section class="queue-display">
+      <div class="label front">FRONT</div>
+      <div id="queueContainer"></div>
+      <div class="label rear">REAR</div>
+    </section>
+
+    <!--Message-->
+    <p id="message">Queue is empty.</p>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
