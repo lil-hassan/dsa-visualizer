@@ -118,6 +118,17 @@ header {
   animation: popIn 0.1s ease;
 }
 
+.array-item.empty {
+  background: #e5e5e5;
+  color: #999;
+  border: 2px dashed #ccc;
+}
+
+.array-item.filled {
+  background: goldenrod;
+  color: white;
+}
+
 /* Status message */
 #message {
   text-align: center;
@@ -125,6 +136,9 @@ header {
   font-size: 0.95rem;
 }
 
+#remove-index{
+  opacity: 0 ;
+}
 /* Animation */
 @keyframes popIn {
   from {

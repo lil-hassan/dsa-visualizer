@@ -11,7 +11,7 @@
 <body>
 
   <header class="header">
-    <h2>ArrayList Visualizer</h2>
+    <h2> Array Visualizer (1-Dimensional) </h2>
   </header>
 
   <main class="container">
@@ -25,16 +25,17 @@
 
             <div>
             <label for="array-input">Key</label>
-            <input type="number" id="Array-input" placeholder="Enter Key">
-
-            <label for="array-input">Index</label>
-            <input type="number" id="index" placeholder="Enter Index" min="0">
+            <input type="number" id="array-input" placeholder="Enter Key">
             </div>
+
+            <!-- <label for="index">Index</label>
+            <input type="number" id="add-index" placeholder="Enter Index" min="0">
+            </div> -->
 
         <div class="array-function-button">
       <button id="add-to-front">Add to front</button>
       <button id="add-to-back">Add to back</button>
-      <button id="add-at-index">Add at index</button>
+      <!--<button id="add-at-index">Add at index</button>-->
       </div>
       </div>
 
@@ -42,12 +43,12 @@
 
       <div class="remove">
         <div>
-      <label for="array-input">Index</label>
-            <input type="number" id="index" placeholder="Enter Index" min="0">
+      <label for="index"></label>
+            <input type="number" id="remove-index" placeholder="Enter Index" min="0">
             </div>
             
         <div class="array-function-button">
-      <button id="remove-index">Remove Index</button>
+      <!-- <button id="remove-at-index">Remove Index</button>  -->
       <button id="remove-front">Remove front</button>
       <button id="remove-back">Remove back</button>
       </div>
@@ -57,10 +58,10 @@
     </section>
 
     
-    <!-- Queue display -->
-    <section class="ArrayList-display">
+    <!-- Arraylist display -->
+    <section class="array-display">
       
-      <div id="arraylistContainer"></div>
+      <div id="arrayContainer"></div>
       
     </section>
 
