@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Array</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="array-style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h2>Array Visualizer (1-Dimensional) </h2>
+  </header>
+
+  <main class="container">
+
+    <!-- Controls -->
+    <section class="controls">
+
+      <div>
+        <label for="array-size">Array Size</label>
+        <input type="number" id="array-size" name="arraySize" placeholder=" Array Size" min="1" max="15">
+      </div>
+      
+
+      <div class="array-function">
+      
+        <div class="add">
+
+            <div>
+            <label for="array-input">Key</label>
+            <input type="number" id="array-input" placeholder="Enter Key">
+            </div>
+
+            <!-- <label for="index">Index</label>
+            <input type="number" id="add-index" placeholder="Enter Index" min="0">
+            </div> -->
+
+        <div class="array-function-button">
+      <button id="add-to-front">Add to front</button>
+      <button id="add-to-back">Add to back</button>
+      <!--<button id="add-at-index">Add at index</button>-->
+      </div>
+      </div>
+
+
+
+      <div class="remove">
+        <div>
+      <label for="index"></label>
+            <input type="number" id="remove-index" placeholder="Enter Index" min="0">
+            </div>
+            
+        <div class="array-function-button">
+      <!-- <button id="remove-at-index">Remove Index</button>  -->
+      <button id="remove-front">Remove front</button>
+      <button id="remove-back">Remove back</button>
+      </div>
+    </div>
+    </div>
+
+    </section>
+
+    
+    <!-- Queue display -->
+    <section class="array-display">
+      
+      <div id="arrayContainer"></div>
+      
+    </section>
+
+    <!--Message-->
+    <p id="message">Array is empty.</p>
+</main>
+
+  <script src="array-script.js"></script>
+</body>
+</html>
