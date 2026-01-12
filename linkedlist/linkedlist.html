@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Linked-List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="linkedlist-style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h2> Linked-List (Singly) </h2>
+  </header>
+
+  <main class="container">
+
+    <!-- Controls -->
+    <section class="controls">
+
+      <div class="linkedlist-function">
+      
+        <div class="add">
+
+            <div>
+            <label for="linkedlist-input">Key</label>
+            <input type="number" id="linkedlist-input" placeholder="Enter Key">
+            </div>
+
+            <!-- <label for="index">Index</label>
+            <input type="number" id="add-index" placeholder="Enter Index" min="0">
+            </div> -->
+
+        <div class="linkedlist-function-button">
+      <button id="add-to-front">Add to front</button>
+      <button id="add-to-back">Add to back</button>
+      <!--<button id="add-at-index">Add at index</button>-->
+      </div>
+      </div>
+
+
+
+      <div class="remove">
+        <div>
+      <label for="index"></label>
+            <input type="number" id="remove-index" placeholder="Enter Index" min="0">
+            </div>
+            
+        <div class="linkedlist-function-button">
+      <!-- <button id="remove-at-index">Remove Index</button>  -->
+      <button id="remove-front">Remove front</button>
+      <button id="remove-back">Remove back</button>
+      </div>
+    </div>
+    </div>
+
+    </section>
+
+    
+    <!-- Arraylist display -->
+    <section class="linkedlist-display">
+
+      <div class="label head">Head </div>
+      <!-- <div class="linkedlist-item-arrow"></div> -->
+      <div id="linkedlistContainer"></div>
+      <div class="label tail">Null</div>
+    </section>
+
+    <!--Message-->
+    <p id="message">List is empty.</p>
+</main>
+
+  <script src="linkedlist-script.js"></script>
+</body>
+</html>
