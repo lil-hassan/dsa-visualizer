@@ -3,6 +3,8 @@ document.getElementById("queue").addEventListener("click", queue);
 document.getElementById("array").addEventListener("click", array);
 document.getElementById("arraylist").addEventListener("click", arraylist);
 document.getElementById("linkedlist").addEventListener("click", linkedlist);
+document.getElementById("min-heap").addEventListener("click", minheap);
+document.getElementById("max-heap").addEventListener("click", maxheap);
 
 
 function stack(){
@@ -23,4 +25,12 @@ function arraylist(){
 
 function linkedlist(){
     window.location.href = "linkedlist/linkedlist.html";
+}
+
+function minheap(){
+    window.location.href = "min-heap/min-heap.html";
+}
+
+function maxheap(){
+    window.location.href = "max-heap/max-heap.html";
 }
