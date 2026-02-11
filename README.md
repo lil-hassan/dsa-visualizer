@@ -1,128 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DSA Visualizer - Project Overview</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+# 📊 Data Structure Visualizer
 
-        h1, h2 {
-            color: #1f2937;
-        }
+An interactive web-based tool to visualize and learn fundamental data structures through animations and hands-on operations.
 
-        h1 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-        section {
-            margin-bottom: 30px;
-        }
+## 🌟 Features
 
-        ul {
-            margin-left: 20px;
-        }
+- **Interactive Visualizations**: See data structures in action with real-time visual feedback
+- **Multiple Data Structures**: Comprehensive coverage of fundamental data structures
+- **User-Friendly Interface**: Clean, intuitive design with easy-to-use controls
+- **Educational Tool**: Perfect for students learning data structures and algorithms
+- **No Dependencies**: Pure HTML, CSS, and JavaScript - no frameworks required
+- **Responsive Design**: Works on desktop and mobile devices
 
-        .tech-stack span {
-            background: #e5e7eb;
-            padding: 6px 10px;
-            border-radius: 6px;
-            margin-right: 8px;
-            font-size: 14px;
-        }
+## 📚 Included Data Structures
 
-        .screenshots img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+### 1. **Queue** (FIFO - First In First Out)
+- **Enqueue**: Add elements to the rear
+- **Dequeue**: Remove elements from the front
+- **Peek**: View the front element without removing it
+- Visual representation of queue overflow and underflow
 
-        footer {
-            margin-top: 40px;
-            padding-top: 10px;
-            border-top: 1px solid #ddd;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
+### 2. **Stack** (LIFO - Last In First Out)
+- **Push**: Add elements to the top
+- **Pop**: Remove elements from the top
+- **Peek**: View the top element
+- Visual demonstration of stack operations
 
-    <h1>📊 DSA Visualizer</h1>
-    <p>
-        A web-based <strong>Data Structures & Algorithms Visualizer</strong> built using 
-        <strong>HTML, CSS, and JavaScript</strong> to help learners understand DSA concepts 
-        through interactive and animated visualizations.
-    </p>
+### 3. **Array** (Linear Data Structure)
+- Fixed-size collection
+- Index-based access
+- Insert and delete operations
+- Visual representation of array elements
 
-    <section>
-        <h2>🎯 Purpose</h2>
-        <p>
-            This project simplifies abstract DSA concepts by visually demonstrating 
-            how data structures and algorithms work step by step, making learning 
-            more intuitive and engaging.
-        </p>
-    </section>
+### 4. **ArrayList** (Dynamic Array)
+- Dynamic resizing capability
+- Add and remove operations
+- Automatic capacity management
+- Visualize array growth
 
-    <section>
-        <h2>👥 Target Users</h2>
-        <ul>
-            <li>Computer Science students</li>
-            <li>Beginner programmers</li>
-            <li>DSA learners preparing for interviews</li>
-            <li>Educators and self-learners</li>
-        </ul>
-    </section>
+### 5. **Linked List** (Linear Data Structure)
+- Singly linked list implementation
+- Insert at beginning, end, or specific position
+- Delete operations
+- Visual representation of node connections
 
-    <section>
-        <h2>✨ Features</h2>
-        <ul>
-            <li>Interactive visualization of data structure operations</li>
-            <li>User-controlled input for custom scenarios</li>
-            <li>Step-by-step animations</li>
-            <li>Clean and responsive UI</li>
-            <li>JavaScript-based algorithm logic</li>
-            <li>Supports Arrays and Queue (extendable)</li>
-        </ul>
-    </section>
+### 6. **Max Heap** (Priority Queue)
+- Parent node larger than children
+- Heapify operations
+- Extract maximum element
+- Visual tree representation
 
-    <section>
-        <h2>🛠️ Tech Stack</h2>
-        <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
-    </section>
+### 7. **Min Heap** (Priority Queue)
+- Parent node smaller than children
+- Heapify operations
+- Extract minimum element
+- Visual tree representation
 
-    <section class="screenshots">
-        <h2>🖼️ Screenshots</h2>
-        <p>Add your screenshots inside a folder and update the image paths below:</p>
+## 🚀 Getting Started
 
-        <img src="screenshots/queue.png" alt="Queue Visualization">
-        <img src="screenshots/animation.png" alt="Operation Animation">
-    </section>
+### Installation
 
-    <section>
-        <h2>📚 Learning Outcomes</h2>
-        <ul>
-            <li>Strong understanding of DSA fundamentals</li>
-            <li>Practical JavaScript and DOM manipulation skills</li>
-            <li>Improved algorithmic thinking through visualization</li>
-        </ul>
-    </section>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/lil-hassan/dsa-visualizer.git
+   ```
 
-    <footer>
-        <p><strong>Author:</strong> Hassan Raza – Software Engineering Student</p>
-    </footer>
+2. **Navigate to the project directory**
+   ```bash
+   cd dsa-visualizer
+   ```
 
-</body>
-</html>
+3. **Open in browser**
+   - Simply open `index.html` in your web browser
+
+   
+## 💻 Usage
+
+1. **Launch the Application**: Open `index.html` in your browser
+2. **Select a Data Structure**: Click on any data structure card from the home page
+3. **Perform Operations**: 
+   - Use the input field to enter values
+   - Click operation buttons (Enqueue, Push, Insert, etc.)
+   - Set size constraints where applicable
+   - View real-time visual updates
+
+### Keyboard Shortcuts
+
+- **Enter**: Quick submit/add operation
+- **Delete**: Quick remove operation (on applicable structures)
+
+## 📸 Screenshots
+
+### Home Page
+<img width="891" height="446" alt="image" src="https://github.com/user-attachments/assets/621f2a0f-4b41-45a6-be94-4ca1ed0fc87c" />
+
+
+### Queue Visualizer
+<img width="960" height="191" alt="image" src="https://github.com/user-attachments/assets/34e90a91-6ac0-420f-b2a5-8e46a1ad8200" />
+
+
+### Stack Operations
+<img width="828" height="426" alt="image" src="https://github.com/user-attachments/assets/d333690e-4bb1-4f41-909d-da599c5005a9" />
+
+
+## 🎯 Use Cases
+
+- **Students**: Learn data structures through interactive visualization
+ **Self-Learning**: Explore data structures
+
+## 🛠️ Project Structure
+
+```
+dsa-visualizer/
+├── index.html              # Main landing page
+├── home-style.css          # Global styles
+├── home-script.js          # Navigation logic
+├── assets/                 # Images and icons
+│   ├── queue.png
+│   ├── stack.png
+│   ├── array.png
+│   └── ...
+├── queue/                  
+├── stack/                  
+├── array/                  
+├── arraylist/              
+├── linkedlist/             
+├── max-heap/               
+├── min-heap/               
+└── README.md
+```
+## 🌐 Live Demo
+
+[View Live Demo](#) _(https://dsa-visuallizer.netlify.app/)_
